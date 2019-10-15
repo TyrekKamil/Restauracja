@@ -20,6 +20,7 @@ class Terminal:
         pass
 
     def showOrders(self):
+        print(">>> Orders List <<<\n")
         for order in self.orders:
             print(order)
 
