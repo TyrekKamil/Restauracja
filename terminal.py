@@ -3,9 +3,9 @@ class Terminal:
         # array of order objects
         self.orders = []
 
-    def newOrder(self, table):
+    def newOrder(self, order):
         # make new order
-        pass
+        self.orders.append(order)
 
     def cancleOrder(self):
         # cancel an order
@@ -18,6 +18,10 @@ class Terminal:
     def customOrder(self):
         # create a custom order
         pass
+
+    def showOrders(self):
+        for order in self.orders:
+            print(order)
 
 
 class Order:
@@ -57,8 +61,14 @@ class Menu:
         self.menu.append(menuItem)
 
 
+# main terminal
+terminal1 = Terminal()
+
+# main menu
 menu = Menu()
 
+
+# list of example menu objects
 dish1 = MenuItem(
     'Schabowy z ziemniakami i surówką',
     ['kotlet schabowy', 'ziemniaki', 'surówka'],
@@ -83,12 +93,19 @@ drink1 = MenuItem(
     2.99
 )
 
+# add items to menu
 menu.addItem(dish1)
 menu.addItem(dish2)
 menu.addItem(dish3)
 menu.addItem(drink1)
 
+# order objects
 order1 = Order(12, [dish1, drink1])
+order2 = Order(24, [dish2, drink1])
 
+# adding orders to terminal
+terminal1.newOrder(order1)
+terminal1.newOrder(order2)
 
-print(order1)
+# display all orders
+terminal1.showOrders()
