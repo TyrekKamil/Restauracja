@@ -99,7 +99,7 @@ public class Main {
                 addToOrder(Integer.parseInt(input.nextLine()));
                 break;
             case "3":
-                payment(int tableNum);
+                payment(Integer.parseInt(input.nextLine()));
                 break;
         }
     }
