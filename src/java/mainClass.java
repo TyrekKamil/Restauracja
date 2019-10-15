@@ -29,9 +29,10 @@ public class mainClass {
                     System.out.println("Wybierz zamówienie, które zostało przygotowane" + "\n[0] Wróć do menu");
                     getUnpreparedOrders(waiter_tablet);
                     int preparedFoodId = scanner.nextInt();
-                    if(preparedFoodId==0 || preparedFoodId>=waiter_tablet.getListOfOrders().size()){
+                    if(preparedFoodId==0 || preparedFoodId>waiter_tablet.getListOfOrders().size()){
                         break;
                     } else {
+                        System.out.println(preparedFoodId);
                         waiter_tablet.getListOfOrders().get(preparedFoodId-1).makePrepared();
                     }
                     break;
