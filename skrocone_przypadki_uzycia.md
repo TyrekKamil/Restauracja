@@ -4,26 +4,54 @@ Aktor podstawowy: Kelner
 
 Główni odbiorcy i oczekiwania względme systemu:
 - Kelner: oczekuje możliwości szybkiego i bezproblemowego wprowadzenia danych, braku problemów z wyświetleniem zamówień niezrealizowanych i zrealizowanych, odebrania płatności.
-- Klient: chce szybko zamówić posiłek, otrzymać zgodnie z zamówieniem, szybko i bezproblemowo dokonać płatnosci oraz otrzymać dowód zakupu
-- Restauracja: kontrola zamówień, najpopularniejszych dań oraz dobieranych dodatków, najczęściej odwiedzanych dni i godzin.
-
+- Klient: chce szybko zamówić posiłek, otrzymać zgodnie z zamówieniem, szybko i bezproblemowo dokonać płatnosci oraz otrzymać dowód zakupu.
+- Restauracja: Kontrola stanu zamówień, stanu kasy i terminala. Przechowywanie informacji o stanie składników na magazynie.
 
 Warunki wstępne: Zalogowanie do tableta przez kelnera.
 
 Warunki końcowe: Poprawnie zrealizowane zamówienie. System magazynowy jest pod kontrolą. Znane są najpopularniejsze pory odwiedzin i posiłków. Rachunek zostaje wydrukowany, płatność przebiegła poprawnie.
 
 Scenaiusz główny
-1. Kelner podchodzi do stolika, aby odebrać zamówienie.
-2. Kelner na podstawie upodobań klienta wybiera posiłki, które życzy sobie klient.
-3. Cena to suma cen za posiłki, wliczając w to upragnione dodatki. 
-4. Do kuchni i magazynu zostaje wysłana informacja o zamówieniu. Kuchnia otrzymuje informacje, czy na stanie są dane produkty. Kuchnia otrzymuje również informacje o konieczności przygotowania posiłku. 
-5. Kuchnia informuje o przygotowanym posiłku, posiłek jest zaniesiony przez kelnera.
-6. Kelner po pewnym czasie podaje rachunek Klientowi. 
-7. Klient wybiera płatność gotówką lub kartą.
-8. Klient dokonuje płatności.
-9. Zamówienie zostaje zarchiwizowane.
-10. Na podstawie zarchiwizowanych zamówień prowadzone są statystki najpopularniejszych posiłkow.
 
+1. Kelner podchodzi do stolika, aby odebrać zamówienie.
+2. Kelner wprowadza do systemu pozycje z menu zamawiane przez klienta. System generuje zamówienie.
+3. Zamówienie zostaje wysłane do komputera przekazywania zleceń w kuchni.
+4. Po przygotowaniu posiłku zmienia się jego status na komputerze przekazywania zleceń w kuchni.System informuje kelnera o gotowości posiłku.
+5. Kelner dostarcza posiłek do stolika. System otrzymuje informację, że posiłek jest dostarczony.
+6. Po przygotowaniu całego zamówienia znika ono z komputera przekazywania zleceń w kuchni.
+//Klient zajada aż mu się uszy trzęsą.
+7. Klient prosi o rachunek. Klient wybiera płatność gotówką.
+8. System generuje rachunek na podstawie zamówienia.
+9. Klient dokonuje płatności u kelnera. 
+9a. Kelner wprowadza do systemu otrzymaną kwotę. 
+9b. System oblicza resztę na podstawie rachunku.
+9c. Kelner wydaje klientowi resztę.
+9d. System dodaje zapłaconą kwotę do stanu kasy.
+10. Zamówienie zostaje zarchiwizowane.
+
+Scenariusz alternatywny
+2a. Klient zamawia danie z inną konfiguracją dodatków niż domyślna.
+2b. Kelner wprowadza zamianę dodatków do systemu.
+Powrót do punku 3.
+
+Scenariusz alternatywny
+2a. Klient chce zamówić posiłek, którego składnik(i) są niedostępne w magazynie.
+2b. System informuje kelnera o braku dostępności składników.
+2c. Kelner proponuje zamianę dodatków lub wybór innego dania.
+Powrót do punktu 2. 
+
+Scenariusz alternatywny
+7. Klient chce zapłacić kartą.
+8. System generuje rachunek na podstawie zamówienia.
+9a. Kelner wprowadza kwotę na terminalu. Klient dokonuje płatności.
+9b. Płatność przebiegła pomyślnie. Kelner oznacza w systemie płatność kartą.
+Powrót do scenariusza głównego.
+
+Scenariusz alternatywny
+7a. Klient chce podzielić rachunek.
+7b. Kelner wprowadza do systemu zamówione pozycje dla każdego z osobnych rachunków.
+8a. System generuje rachunki.
+Powrót do punktu 9. scenariusza głównego.
 
 ---- scenariusz do rozwiniecia ----
 0.Sprawdzenie, czy w restauracji są klienci
