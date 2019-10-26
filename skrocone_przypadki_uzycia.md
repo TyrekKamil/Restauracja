@@ -19,7 +19,6 @@ Scenaiusz główny
 4. Po przygotowaniu posiłku zmienia się jego status na komputerze przekazywania zleceń w kuchni.System informuje kelnera o gotowości posiłku.
 5. Kelner dostarcza posiłek do stolika. System otrzymuje informację, że posiłek jest dostarczony.
 6. Po przygotowaniu całego zamówienia znika ono z komputera przekazywania zleceń w kuchni.
-//Klient zajada aż mu się uszy trzęsą.
 7. Klient prosi o rachunek. Klient wybiera płatność gotówką.
 8. System generuje rachunek na podstawie zamówienia.
 9. Klient dokonuje płatności u kelnera. 
@@ -59,18 +58,29 @@ Powrót do punktu 9. scenariusza głównego.
 
 Rozszerzenia (ścieżki alternatywne):   
 2a. Brak posiłku, który sobie zażyczył klient.  
-    2a2.Zaproponowanie innego posiłku z menu.  
-    2a2. Powrót do kroku drugiego.  
-2b. Brak części składników potrzebnych do przygotowania potrawy.
-    2b1.Zaproponowanie podania dania bez części składników.
-    2b2 Powrót do kroku 2a1.
-3a. Brak dodatków dla klienta.
-    3a1. Zakomunikowanie klientowi, że nie ma dodatku, ktory sobie życzy.
-    3a2. Powrót do kroku trzeciego.
-9a. Terminal odrzuca płatność
-    9a1. Powrót do kroku ósmego.
+    2a2.Zaproponowanie innego posiłku z menu.    
+    2a2. Powrót do kroku drugiego.   
+2b. Brak części składników potrzebnych do przygotowania potrawy.  
+    2b1.Zaproponowanie podania dania bez części składników.  
+    2b2 Powrót do kroku 2a1.  
+3a. Brak dodatków dla klienta.  
+    3a1. Zakomunikowanie klientowi, że nie ma dodatku, ktory sobie życzy.  
+    3a2. Powrót do kroku trzeciego.  
+9a. Terminal odrzuca płatność  
+    9a1. Powrót do kroku ósmego.  
  
 
 Wymagania specjalne:
-Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
+- Aplikacja na urządzeniach mobilnych (tablet), możliwość odczytywania tekstu z 1 metra
+- Autoryzacja musi być dokonana w przeciągu jednej minuty
+- Interfejs wielojęzyczny
 
+
+Wymagania technologiczne oraz ograniczenia na wprowadzane dane:  
+2a. System przechowujący dane o dostępnych składnikach  
+7a. Odczytywanie danych karty kredydowej oraz odczytywanie PIN  
+
+Kwestie otwarte:  
+- Co w przypadku, gdy w jednoczesnym momencie zamówi się produkt z ostatnim ze składników, przez co jeden z klientów straci możliwość uzyskania pełnej potrawy?  
+- Czy system powinien informować, gdy ilość któregoś ze składników jest niska?  
+- Czy Klient powinien sam wpisywać dane karty, czy Kelner powinien mieć dostęp do danych karty Klienta?  
