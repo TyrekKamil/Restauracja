@@ -1,86 +1,41 @@
-RESTAURACJA
+Opis skrócony przypadków użycia
+===============================
 
-Aktor podstawowy: Kelner 
+Aktorzy procesu i ich cele
+--------------------------
 
-Główni odbiorcy i oczekiwania względme systemu:
-- Kelner: oczekuje możliwości szybkiego i bezproblemowego wprowadzenia danych, braku problemów z wyświetleniem zamówień niezrealizowanych i zrealizowanych, odebrania płatności.
-- Klient: chce szybko zamówić posiłek, otrzymać zgodnie z zamówieniem, szybko i bezproblemowo dokonać płatnosci oraz otrzymać dowód zakupu.
-- Restauracja: Kontrola stanu zamówień, stanu kasy i terminala. Przechowywanie informacji o stanie składników na magazynie.
+Aktor       Cel 
+----------- -----------------------------
+Klient      Wybór posiłku, jego zakup, płatność kartą/gotówką
+Kelner      Odebranie zamówienia, wybranie na urządzeniu posiłków z dodatkami, obsługa plantosci
+Restauracja  Kontrola stanu zamówień, stanu kasy i terminala. Przechowywanie informacji o stanie składników na magazynie.
 
-Warunki wstępne: Zalogowanie do tableta przez kelnera.
+Słownik
+-------
 
-Warunki końcowe: Poprawnie zrealizowane zamówienie. System magazynowy jest pod kontrolą. Znane są najpopularniejsze pory odwiedzin i posiłków. Rachunek zostaje wydrukowany, płatność przebiegła poprawnie.
+Hasło       Opis
+----------- -----------------------------
+Zamówienie  lista zamówionych przez klienta dań
+Danie 		 pozycja z menu, np. przystawka, posiłek lub napów
+Płatność 	proces zapłacenia za usługę przyrządzenia potrawy
 
-Scenaiusz główny
+Przypadki użycia
+----------------
 
-1. Kelner podchodzi do stolika, aby odebrać zamówienie.  
-2. Kelner wprowadza do systemu pozycje z menu zamawiane przez klienta. System generuje zamówienie.  
-3. Zamówienie zostaje wysłane do komputera przekazywania zleceń w kuchni.
-4. Po przygotowaniu posiłku zmienia się jego status na komputerze przekazywania zleceń w kuchni.System informuje kelnera o gotowości posiłku.
-5. Kelner dostarcza posiłek do stolika. System otrzymuje informację, że posiłek jest dostarczony.
-6. Po przygotowaniu całego zamówienia znika ono z komputera przekazywania zleceń w kuchni.
-7. Klient prosi o rachunek. Klient wybiera płatność gotówką.
-8. System generuje rachunek na podstawie zamówienia.
-9. Klient dokonuje płatności u kelnera. 
-9a. Kelner wprowadza do systemu otrzymaną kwotę. 
-9b. System oblicza resztę na podstawie rachunku.
-9c. Kelner wydaje klientowi resztę.
-9d. System dodaje zapłaconą kwotę do stanu kasy.
-10. Zamówienie zostaje zarchiwizowane.
+### Use case 1: Zamówienie
 
-Scenariusz alternatywny  
-2a. Klient zamawia danie z inną konfiguracją dodatków niż domyślna.  
-2b. Kelner wprowadza zamianę dodatków do systemu.  
-Powrót do punku 3.  
+Kelner podchodzi do stolika, aby odebrać zamówienie.
+Kelner wprowadza do systemu pozycje z menu zamawiane przez klienta. System generuje zamówienie.
+Zamówienie zostaje wysłane do komputera przekazywania zleceń w kuchni.
 
-Scenariusz alternatywny  
-2a. Klient chce zamówić posiłek, którego składnik(i) są niedostępne w magazynie.  
-2b. System informuje kelnera o braku dostępności składników.  
-2c. Kelner proponuje zamianę dodatków lub wybór innego dania.  
-Powrót do punktu 2.  
+### Use case 2: Płatność
 
-Scenariusz alternatywny  
-7. Klient chce zapłacić kartą.  
-8. System generuje rachunek na podstawie zamówienia.  
-9a. Kelner wprowadza kwotę na terminalu. Klient dokonuje płatności.  
-9b. Płatność przebiegła pomyślnie. Kelner oznacza w systemie płatność kartą.  
-Powrót do scenariusza głównego.  
+Kelner podchodzi do klienta. Na prośbę Klienta wybiera płatność gotówką lub kartą. Jest możliwość podziału rachunku na pare. W przypadku płatnosci gotówką tablet łaczy się z terminalem płatniczym i informuje o powodzeniu płatości.
 
-Scenariusz alternatywny  
-7a. Klient chce podzielić rachunek.  
-7b. Kelner wprowadza do systemu zamówione pozycje dla każdego z osobnych rachunków.  
-8a. System generuje rachunki.  
-Powrót do punktu 9. scenariusza głównego.  
+### Use case 3: Integracja z systemem magazynu
 
----- scenariusz do rozwiniecia ----  
-0.Sprawdzenie, czy w restauracji są klienci  
-9.1 Kelner wylicza ile zostało reszty klientowi  
+Magazyn na bieżąco informuje o stanie składników. W przypadku, gdy liczba któregoś ze składników jest zerowa, kelner przekazuje informacje, iż dany posiłek jest dostępny bez danego składnika lub wcale nie jest dostępny. Analogicznie, w przypadku chęci dodania do składnika dodatków, kelner otrzymuje informacje, czy dany produkt można zamówić z daną ilością dodatków.
 
-Rozszerzenia (ścieżki alternatywne):   
-2a. Brak posiłku, który sobie zażyczył klient.  
-    2a2.Zaproponowanie innego posiłku z menu.    
-    2a2. Powrót do kroku drugiego.   
-2b. Brak części składników potrzebnych do przygotowania potrawy.  
-    2b1.Zaproponowanie podania dania bez części składników.  
-    2b2 Powrót do kroku 2a1.  
-3a. Brak dodatków dla klienta.  
-    3a1. Zakomunikowanie klientowi, że nie ma dodatku, ktory sobie życzy.  
-    3a2. Powrót do kroku trzeciego.  
-9a. Terminal odrzuca płatność  
-    9a1. Powrót do kroku ósmego.  
- 
+### Use case 4: Dzielenie rachunku
+Klient prosi o podział rachunku. Kelner wybiera opcje i wybiera które posiłki mają znaleźć się na osobnym rachunku. Po wybraniu rachunku następuje platność. Następnie wybierane są produkty to wydzielenia kolejnego rachunku. Operajca trwa do wydzielenia wszytkich posiłków z danego zamówienia.
 
-Wymagania specjalne:
-- Aplikacja na urządzeniach mobilnych (tablet), możliwość odczytywania tekstu z 1 metra
-- Autoryzacja musi być dokonana w przeciągu jednej minuty
-- Interfejs wielojęzyczny
-
-
-Wymagania technologiczne oraz ograniczenia na wprowadzane dane:  
-2a. System przechowujący dane o dostępnych składnikach  
-7a. Odczytywanie danych karty kredydowej oraz odczytywanie PIN  
-
-Kwestie otwarte:  
-- Co w przypadku, gdy w jednoczesnym momencie zamówi się produkt z ostatnim ze składników, przez co jeden z klientów straci możliwość uzyskania pełnej potrawy?  
-- Czy system powinien informować, gdy ilość któregoś ze składników jest niska?  
-- Czy Klient powinien sam wpisywać dane karty, czy Kelner powinien mieć dostęp do danych karty Klienta?  
