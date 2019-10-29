@@ -88,7 +88,7 @@ Czy Klient powinien sam wpisywać dane karty, czy Kelner powinien mieć dostęp 
 
 PODZIAŁ
 
-Malwina - płatność/dzielenie rachunku
-Kamil - customizacja posilkow
-Phillip - zamówienie 
-Mateusz - realizacja zamówienia (po zamówieniu do płatnoości)
+Malwina - płatność/dzielenie rachunku  
+Kamil - customizacja posilkow  
+Phillip - zamówienie   
+Mateusz - realizacja zamówienia (po zamówieniu do płatnoości)  
