@@ -78,3 +78,17 @@ Kwestie otwarte:
 Co w przypadku, gdy w jednoczesnym momencie zamówi się produkt z ostatnim ze składników, przez co jeden z klientów straci możliwość uzyskania pełnej potrawy?
 Czy system powinien informować, gdy ilość któregoś ze składników jest niska?
 Czy Klient powinien sam wpisywać dane karty, czy Kelner powinien mieć dostęp do danych karty Klienta?
+
+
+
+
+
+
+
+
+PODZIAŁ
+
+Malwina - płatność/dzielenie rachunku
+Kamil - customizacja posilkow
+Phillip - zamówienie 
+Mateusz - realizacja zamówienia (po zamówieniu do płatnoości)
