@@ -30,7 +30,7 @@ Zamówienie zostaje wysłane do komputera przekazywania zleceń w kuchni.
 
 ### Use case 2: Płatność
 
-Kelner podchodzi do klienta. Na prośbę Klienta wybiera płatność gotówką lub kartą. Jest możliwość podziału rachunku na pare. W przypadku płatnosci gotówką tablet łaczy się z terminalem płatniczym i informuje o powodzeniu płatości.
+Klient prosi o rachunek. Kelner pyta o ewentualny podział zamówienia na więcej rachunków. System generuje rachunek lub rachunki. Klient dokonuje płatności gotówką lub kartą w zależności od preferencji. System dodaje zapłaconą kwotę do stanu kasy.
 
 ### Use case 3: Integracja z systemem magazynu
 
