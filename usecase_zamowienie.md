@@ -10,6 +10,7 @@
 ## Warunki wstępne
 
 * Klient musi być zdecyzdowany na zamówienie
+* (autoryzacja kelnera)
 * Kelner musi mieć sprawny i gotowy do pracy terminal
 
 ## Warunki końcowe
