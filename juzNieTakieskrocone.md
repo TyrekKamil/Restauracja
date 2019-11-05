@@ -2,7 +2,7 @@ RESTAURACJA
 
 Aktor podstawowy: Kelner
 
-Główni odbiorcy i oczekiwania względme systemu:
+Główni odbiorcy i oczekiwania względem systemu:
 
 Kelner: oczekuje możliwości szybkiego i bezproblemowego wprowadzenia danych, braku problemów z wyświetleniem zamówień niezrealizowanych i zrealizowanych, odebrania płatności.
 Klient: chce szybko zamówić posiłek, otrzymać zgodnie z zamówieniem, szybko i bezproblemowo dokonać płatnosci oraz otrzymać dowód zakupu.
