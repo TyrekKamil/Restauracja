@@ -1,0 +1,46 @@
+Use Case: realizacja_zamówienia 
+
+Aktor podstawowy: Kucharz
+
+Główni odbiorcy i oczekiwania względem systemu:
+-------------------------------------------------
+
+- Kucharz: Przygotuje posilek i zmienia status posiłku
+- Kelner: Dostarcza zamówienie do kucharza i odbiera przygotowany posiłek
+
+Warunki wstępne:
+----------------
+* Kelner musi przesłać zamówienie w tablecie do kuchni (kucharza)
+
+Warunki końcowe:
+----------------
+* Kelner odbiera zamówienie z kuchni
+
+Scenariusz główny (ściażka podstawowa):
+-------------------------------
+1.Kucharz dostaje zamówienie od kelnera, które widnieje jako "przyjęte"
+2.Kucharz zaczyna prace nad zamówieniem i zmienia jego status jako "w trakcie" 
+3. Wprowadza oczekiwany czas.
+4.Zrobienie dania zgodnie z zamówieniem klienta
+5.Zmiana w systemie stanu zamówienia jako "gotowy"
+
+Rozszerzenia (ścieżki alternatywne):
+---------------------------
+1.
+2.
+3.
+
+Wymagania specjalne:
+----------------------
+-
+-
+-
+Wymagania technologiczne oraz ograniczenia na wprowadzone dane:
+-----------------------------------
+1.
+2.
+3.
+
+Kwestie otwarte:
+---------------
+
