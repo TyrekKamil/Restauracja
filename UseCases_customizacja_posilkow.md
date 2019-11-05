@@ -41,21 +41,22 @@ Rozszerzenia (ścieżki alternatywne):
 3a. Brak dodatków dla klienta.  
 3a1. Zakomunikowanie klientowi, że nie ma dodatku, ktory sobie życzy.  
 3a2. Powrót do kroku trzeciego.  
-9a. Terminal odrzuca płatność  
-9a1. Powrót do kroku ósmego.  
   
 Wymagania specjalne:   
   
 Aplikacja na urządzeniach mobilnych (tablet), możliwość odczytywania tekstu z 1 metra  
-Autoryzacja musi być dokonana w przeciągu jednej minuty  
 Interfejs wielojęzyczny  
+System przechowywania informacji o menu i składnikach
+
 Wymagania technologiczne oraz ograniczenia na wprowadzane dane:  
-2a. System przechowujący dane o dostępnych składnikach  
-7a. Odczytywanie danych karty kredydowej oraz odczytywanie PIN  
+2a. System przechowujący dane o dostępnych składnikach
+
   
 Kwestie otwarte:  
   
-Co w przypadku, gdy w jednoczesnym momencie zamówi się produkt z ostatnim ze składników, przez co jeden z klientów straci możliwość uzyskania pełnej potrawy?  
-Czy system powinien informować, gdy ilość któregoś ze składników jest niska?  
-Czy Klient powinien sam wpisywać dane karty, czy Kelner powinien mieć dostęp do danych karty Klienta?  
+Co w przypadku, gdy pomimo informacji, iż składnik jest dostępny, jest niedostępny? Jak dokonać zmiany w zamówieniu, aby klient nie przepłacił za produkt?
+Czy możliwe powinno być ręczne zmniejszanie liczby składników?
+Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
+
+
   
