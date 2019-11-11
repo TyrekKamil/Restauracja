@@ -18,29 +18,40 @@ Warunki końcowe:
 
 Scenariusz główny (ściażka podstawowa):
 -------------------------------
-1.Kucharz dostaje zamówienie od kelnera, które widnieje jako "przyjęte"
-2.Kucharz zaczyna prace nad zamówieniem i zmienia jego status jako "w trakcie" 
-3. Wprowadza oczekiwany czas.
-4.Zrobienie dania zgodnie z zamówieniem klienta
-5.Zmiana w systemie stanu zamówienia jako "gotowy"
+1.Kucharz dostaje zamówienie, które przesłał  kelner, które widnieje jako "przyjęte".
+2.Kucharz zaczyna prace nad zamówieniem i zmienia jego status jako "w trakcie". 
+3.Wprowadza oczekiwany czas.
+4.Zrobienie dania zgodnie z zamówieniem klienta.
+5.Zmiana w systemie stanu zamówienia jako "gotowy".
+6.Kelner odbiera gotowe zamówienie z kuchni. 
 
 Rozszerzenia (ścieżki alternatywne):
 ---------------------------
-1.
-2.
-3.
+1a.Błąd wysyłki, zamówienie nie zostało wysłane prawidłowo.
+1a1.Kucharz wysyła prośbę do kelnera o ponowne przesłanie zamówienia.
+1a2.Powrót do kroku pierwszego.
+
+3a.Kucharz postanowił zrobić sobie przerwe w pracy.
+3a1Oczekiwany czas na danie zwiększa się.
+3b.Kucharz postanowił zmienić priorytet nadesłanych przez kelnera dań.
+3b1.Oczekiwany czas na danie zwiększa się.
+
+4a.Kucharz pomylił się podczas przygotowywania dania
+4a1.Kucharz zaczyna robić podane zamówinie przez klienta od nowa.
+
+6a.Kelner nie odbiera zamówienia przez 5 minut.
+6a1.Ponowne poinformowanie kelnera o gotowym zamówieniu.
 
 Wymagania specjalne:
 ----------------------
--
--
--
+-Aplikacja na urządzeniach mobilnych. 
+-Obecny kucharz, który przygotuje danie
+-Obecny klient, który wyślę zamówienie i odbierze danie
+
 Wymagania technologiczne oraz ograniczenia na wprowadzone dane:
 -----------------------------------
-1.
-2.
-3.
+-Czas zamówienia nie może przekroczyć godziny. 
 
 Kwestie otwarte:
----------------
+Co w przypadku, gdy któreś urządzenie mechaniczne (piec, płyta indukcyjna) ulegnie zniszczeniu? 
 
