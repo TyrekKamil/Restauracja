@@ -21,7 +21,7 @@
 
 1. Kelner inicjalizuje w terminalu tworzenie nowego zamówienia
 2. Zapisuje numer stolika
-3. Klient zaczyna podawać dania, które chce zamówić, a kelner zaczyna je wprowadzać do nowego zamówienia
+3. Klient zaczyna podawać dania, które chce zamówić, a kelner zaczyna je wprowadzać do nowego zamówienia USE CASE CUSTOMIZACJA POSIŁKU
 4. Kelner podsumowywuje dla klienta zamówienie i je zatwierdza
 5. Zamówienie zostaje wysłane do kuchni i oczekuje na zmiane statusu 'do odbioru'
 6. Gdy zamówienie będzie gotowe, kucharz zmienia jego status na 'do odbioru'
