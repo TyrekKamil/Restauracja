@@ -58,6 +58,8 @@ Wymagania specjalne:
 --------------------
 
   - Sprawny terminal płatniczy.
+  
+  - System przechowywania informacji o menu, składnikach i cenach.
 
   - Istnieje tylko jedno nieopłacone zamówienie dla danego numeru stolika.
 
