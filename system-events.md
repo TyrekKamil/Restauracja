@@ -6,7 +6,7 @@ Use case 1: Zamówienie
   - Inicjalizacja nowego zamówienia
   - Wybór numeru stolika dla zamówienia
   - Dodanie pozycji z menu do zamówienia
-  - Zatwierdzenia zamówienia
+  - Zatwierdzenie zamówienia
   - Dodanie pozycji z menu do istniejącego zamówienia
 
 Use case 2: Płatność
@@ -14,9 +14,11 @@ Use case 2: Płatność
 
   - Wybór płatności spośród opcji zamówienia
   - Wybór opcji dzielenia rachunku
+  - Inicjalizacja nowego (oddzielnego) rachunku
   - Dodanie pozycji zamówienia do oddzielnego rachunku
   - Zamknięcie rachunku
   - Wybór formy płatności
+  - Dodanie transakcji (w przypadku powodzenia płatności)
 
 Use case 3: Customizacja
 -----------------
@@ -25,15 +27,12 @@ Use case 3: Customizacja
   - Wybór dodania lub usunięcia składnika z dania
   - Wybór składnika
 
-Use case 4: Dzielenie rachunku
+Use case 4: Realizacja zamówienia
 -----------------
-
-  - Wybór opcji dzielenia rachunku
-  - Wybór dania do rachunku
-
-Use case 5: Realizacja zamówienia
------------------
-  - Przesłanie informacji do kuchni o zamówieniu
-  - Ustalenie czasu oczekiwania na posiłek
-  - Przesłanie informacji o gotowym posiłku
-  - Zatwierdzenie podania posiłku
+  - Zatwierdzenie zamówienia
+  - Zmiana stanu pojedynczej pozycji w zamówieniu na przygotowanie
+  - Zmiana stanu pojedynczej pozycji w zamówieniu na gotową
+  - Zmiana stanu pojedynczej pozycji w zamówieniu na dostarczone
+  - Zmiana stanu zamówienia na przygotowanie
+  - Zmiana stanu zamówienia na gotowe
+  - Zmiana stanu zamówienia na dostarczone
