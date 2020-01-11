@@ -1,3 +1,4 @@
+RestaurantClassDiagram - model wiedzy dziedzinowej
 Rozszerzone przypadki użycia w gałęziach imie_nazwisko    
 
 Diagramy interakcji:  
