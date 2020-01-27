@@ -1,8 +1,8 @@
 https://github.com/TyrekKamil/Restauracja/blob/kamil_tyrek/UseCases_customizacja_posilkow.md  
 https://github.com/TyrekKamil/Restauracja/blob/kamil_tyrek/UseCases_customizacja_posilkow.md - odnosnik do oryginalnego pliku  
 ostatni commit - 5 nov    
-#RESTAURACJA  
-#CUSTOMIZACJA POSIŁKÓW 
+# RESTAURACJA  
+# CUSTOMIZACJA POSIŁKÓW 
 **Aktor podstawowy**: Kelner  
   
 ## Główni odbiorcy i oczekiwania względme systemu:  
