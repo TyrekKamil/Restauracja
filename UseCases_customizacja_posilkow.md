@@ -5,15 +5,15 @@ ostatni commit - 5 nov
 # CUSTOMIZACJA POSIŁKÓW 
 **Aktor podstawowy**: Kelner  
   
-## Główni odbiorcy i oczekiwania względme systemu:  
+## Główni odbiorcy i oczekiwania względem systemu:  
   
-* Kelner: podczas odbioru zamówienia zaznacza zmiany w posiłkach, jakie życzy sobie klient  
-* Klient: chce dostać posiłek z dodatkami, które nie są standardowe, na przykład życzy sobie więcej sosu w spaghetti  
+* Kelner: chce obsłużyć klienta, mieć możliwość edycji posiłku kelnera (dodawanie/usuwanie składników )
+* Klient: chce dostać zmodyfikowany posiłek
 
 ## Warunki wstępne:  
-* Kelner rozpoczął przyjmowanie zamówienia.  
+* Klient prosi o modyfikację posiłku.
 ## Warunki końcowe: 
-* Poprawnie zrealizowane zamówienie. Dostarczony posiłek jest zgodny z zamówieniem, z uwzględnieniem dodatków, które zażyczył sobie klient  
+* Kelner dodał posiłek z wybranymi przez Klienta modyfikacjami (usunięcie/dodanie składniów)
   
 ## Scenaiusz główny  
   
@@ -24,42 +24,26 @@ ostatni commit - 5 nov
 5. Klient otrzymuje posiłek zgodny z zamówieniem.  
   
 ## Scenariusz alternatywny  
-3a. Klient zamawia danie z inną konfiguracją dodatków niż domyślna.  
-3b. Kelner widzi informację, iż dany składnik nie jest dostępny.  
-3c. Kelner informuje klienta i proponuje inne rozwiązanie.  
-Powrót do punku 3.  
+1a. Klient chce zamówić posiłek, którego składnik(i) są niedostępne w magazynie.  
+1b. System informuje kelnera o braku dostępności składników.  
+1c. Kelner proponuje zamianę dodatków lub wybór innego dania.  
   
-## Scenariusz alternatywny  
-2a. Klient chce zamówić posiłek, którego składnik(i) są niedostępne w magazynie.  
-2b. System informuje kelnera o braku dostępności składników.  
-2c. Kelner proponuje zamianę dodatków lub wybór innego dania.  
-Powrót do punktu 2.  
-  
-## Rozszerzenia (ścieżki alternatywne):  
-2a. Brak posiłku, który sobie zażyczył klient.  
-2a2.Zaproponowanie innego posiłku z menu.  
+2a. Brak dodatku, który sobie zażyczył klient.  
+2a2.Zaproponowanie innego dodatku z menu.  
 2a2. Powrót do kroku drugiego.  
-2b. Brak części składników potrzebnych do przygotowania potrawy.  
-2b1.Zaproponowanie podania dania bez części składników.  
-2b2 Powrót do kroku 2a1.  
-3a. Brak dodatków dla klienta.  
-3a1. Zakomunikowanie klientowi, że nie ma dodatku, ktory sobie życzy.  
-3a2. Powrót do kroku trzeciego.  
+2b 
   
 ## Wymagania specjalne:   
   
-* Aplikacja na urządzeniach mobilnych (tablet), możliwość odczytywania tekstu z 1 metra  
-* Interfejs wielojęzyczny  
-* System przechowywania informacji o menu i składnikach
+* System przechowywania informacji o menu i dostępnych składnikach ??
 
 ## Wymagania technologiczne oraz ograniczenia na wprowadzane dane:  
-2a. System przechowujący dane o dostępnych składnikach
+2a. System przechowujący dane o dostępnych składnikach ??
 
   
 ## Kwestie otwarte:  
   
-* Co w przypadku, gdy pomimo informacji, iż składnik jest dostępny, jest niedostępny? Jak dokonać zmiany w zamówieniu, aby klient nie przepłacił za produkt?
-* Czy możliwe powinno być ręczne zmniejszanie liczby składników?
+* Co w przypadku, gdy pomimo informacji, iż składnik jest dostępny, jest niedostępny (np dwóch kelnerow jednoczesnie wziel posilek z "ostatnim" skladnikiem)? Jak dokonać zmiany w zamówieniu, aby klient nie przepłacił za produkt?
 * Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
 
 
