@@ -26,10 +26,6 @@ https://github.com/TyrekKamil/Restauracja/blob/phillip_lawniczak/usecase_zamowie
 3. Klient zaczyna podawać dania, które chce zamówić, a kelner zaczyna je wprowadzać do nowego zamówienia USE CASE CUSTOMIZACJA POSIŁKU
 4. Kelner podsumowywuje dla klienta zamówienie i je zatwierdza
 5. Zamówienie zostaje wysłane do kuchni i oczekuje na zmiane statusu 'do odbioru'
-6. Gdy zamówienie będzie gotowe, kucharz zmienia jego status na 'do odbioru'
-7. Kelner widzi zamówienie gotowe do odbioru w terminale i je odbiera 
-8. Gdy Klient będzie chciał zapłacić za zamówienie, kelner wybiera w terminalu opcję 'zakończ i zapłać'
-9. USE CASE PŁATNOŚĆ
 
 ## Rozszerzenia (ścieżki alternatywne):
 
@@ -42,10 +38,8 @@ https://github.com/TyrekKamil/Restauracja/blob/phillip_lawniczak/usecase_zamowie
 3a3. Klient zamawia do dania dodatek który jest niedostępny.
 3b3. Scenariusz alternatywny 3a1 w Use Case customizacja posiłków
 
-7a. Klient życzy sobie kolejne danie/dodatek do swojego zamówienia
-7b. Kelner wybiera na terminalu numer stolika i wybiera opcję 'dodaj do zamówienia'
-7c. Powrót do punktu 3
-
+6a. Klient chce dokonać kolejnego zamówienia.
+6b. Kelner przyjmuje zamowienie
 
 ## Wymagania specjalne:
 
@@ -60,3 +54,5 @@ https://github.com/TyrekKamil/Restauracja/blob/phillip_lawniczak/usecase_zamowie
 * Baza danych dla stanu magazynu
 
 ## Kwestie otwarte:
+
+* Co w przypadku gdy klient zrezygnuje z zamówienia, przed jego realizacją?
