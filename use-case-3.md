@@ -17,7 +17,7 @@ ostatni commit - 5 nov
 ## Scenaiusz główny  
   
 1. Klient dobiera zmianę do dania, zgodnie z możliwościami danego posiłku. 
-2. Kelner zaznacza na tablecie dodatek.
+2. Kelner zaznacza na tablecie zmianę.
 3. System sprawdza dostępność dodatku.
 4. Zmodyfikowany posiłek zostaje dodany do zamówienia 
   
@@ -26,7 +26,10 @@ ostatni commit - 5 nov
  1. System informuje Kelnera o braku dostępności dodatku
  2. Kelner informuje Klienta o braku skłandnika.
 
-  
+2a. Klient zażyczył sobie zmiany - dodanie składnika 
+ 1. Kelner naciska opcję '+' przy składniku, według zaleceń Klienta    
+2b. Kelner zażyczył sobie zmiany - usunięcie składnika  
+ 1. Kelner naciska opcję '-' przy składniku, według zaleceń Klienta  
 ## Wymagania specjalne:   
   
 
