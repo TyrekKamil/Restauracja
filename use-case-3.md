@@ -28,6 +28,7 @@ ostatni commit - 5 nov
 
 2a. Klient zażyczył sobie zmiany - dodanie składnika 
  1. Kelner naciska opcję '+' przy składniku, według zaleceń Klienta    
+ 
 2b. Kelner zażyczył sobie zmiany - usunięcie składnika  
  1. Kelner naciska opcję '-' przy składniku, według zaleceń Klienta  
 ## Wymagania specjalne:   
