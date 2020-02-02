@@ -23,14 +23,14 @@ ostatni commit - 5 nov
   
 ## Scenariusz alternatywny  
 3a. Klient chce zamówić dodatek, którego składnik(i) są niedostępne w magazynie.
- 1. System informuje Kelnera o braku dostępności dodatku
- 2. Kelner informuje Klienta o braku skłandnika.
+ > 1. System informuje Kelnera o braku dostępności dodatku
+ > 2. Kelner informuje Klienta o braku skłandnika.
 
 2a. Klient zażyczył sobie zmiany - dodanie składnika 
- 1. Kelner naciska opcję '+' przy składniku, według zaleceń Klienta    
+> 1. Kelner naciska opcję '+' przy składniku, według zaleceń Klienta    
  
 2b. Kelner zażyczył sobie zmiany - usunięcie składnika  
- 1. Kelner naciska opcję '-' przy składniku, według zaleceń Klienta  
+ > 1. Kelner naciska opcję '-' przy składniku, według zaleceń Klienta  
 ## Wymagania specjalne:   
   
 
