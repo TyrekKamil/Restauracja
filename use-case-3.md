@@ -1,4 +1,3 @@
-https://github.com/TyrekKamil/Restauracja/blob/kamil_tyrek/UseCases_customizacja_posilkow.md  
 https://github.com/TyrekKamil/Restauracja/blob/kamil_tyrek/UseCases_customizacja_posilkow.md - odnosnik do oryginalnego pliku  
 ostatni commit - 5 nov    
 # RESTAURACJA  
@@ -23,9 +22,9 @@ ostatni commit - 5 nov
 4. Zmodyfikowany posiłek zostaje dodany do zamówienia 
   
 ## Scenariusz alternatywny  
-3a. Klient chce zamówić dodatek, którego składnik(i) są niedostępne w magazynie.  
-3aa. System informuje kelnera o braku dostępności składników.  
-3ab. Kelner informuje o braku składnika.
+3a. Klient chce zamówić dodatek, którego składnik(i) są niedostępne w magazynie.
+ 1. System informuje Kelnera o braku dostępności dodatku
+ 2. Kelner informuje Klienta o braku skłandnika.
 
   
 ## Wymagania specjalne:   
