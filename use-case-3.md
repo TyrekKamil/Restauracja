@@ -36,11 +36,11 @@ ostatni commit - 5 nov
 
 * Możliwość interfejsu wielojęzycznego.
 
-* Ekran dotykowy wyświetlający komunikaty i umożliwiający wprowadzanie danych
+* Ekran dotykowy wyświetlający komunikaty i umożliwiający edycję danych (dodawanie/usuwanie składników)
 
 
 ## Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
-2. Wybór opcji za pomocą ekranu dotykowego  
+2. Wybór opcji za pomocą ekranu dotykowego  - `+`/`-` przy składnikach
 3. System przechowujący dane o dostępnych składnikach
 
   
