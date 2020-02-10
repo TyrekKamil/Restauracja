@@ -18,19 +18,17 @@ ostatni commit - 5 nov
   
 1. Klient dobiera zmianę do dania, zgodnie z możliwościami danego posiłku. 
 2. Kelner zaznacza na tablecie zmianę.
-3. System sprawdza dostępność dodatku.
-4. Zmodyfikowany posiłek zostaje dodany do zamówienia 
+3. Zmodyfikowany posiłek zostaje dodany do zamówienia 
   
 ## Scenariusz alternatywny  
-3a. Klient chce zamówić dodatek, którego składnik(i) są niedostępne w magazynie.
- > 1. System informuje Kelnera o braku dostępności dodatku
- > 2. Kelner informuje Klienta o braku skłandnika.
-
 2a. Klient zażyczył sobie zmiany - dodanie składnika 
-> 1. Kelner naciska opcję '+' przy składniku, według zaleceń Klienta    
+> 1. Kelner naciska opcję '+' przy składniku, aby dodać składnik, według zaleceń Klienta   
+>> 1a. System informuje Kelnera o braku dostępności składnika  
+>>> 1. Kelner informuje Klienta o braku składnika.  
+>>> 2. Operacja customizacji zostaje przerwana.
  
 2b. Kelner zażyczył sobie zmiany - usunięcie składnika  
- > 1. Kelner naciska opcję '-' przy składniku, według zaleceń Klienta  
+ > 1. Kelner naciska opcję '-' przy składniku, aby usunąć składnik, według zaleceń Klienta  
 ## Wymagania specjalne:   
   
 
