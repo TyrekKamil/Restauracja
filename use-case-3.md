@@ -33,8 +33,8 @@ ostatni commit - 5 nov
 ## Wymagania specjalne:   
   
 
-* Możliwość interfejsu wielojęzycznego.  
-2. System posiada informacje o dodatkach, które można dodać do danego posiłku.  
+* Możliwość interfejsu wielojęzycznego.    
+2. System posiada informacje o dodatkach, które można dodać do danego posiłku.    
 2a2. System posiada informacje o dostępnych w magazynie składnikach.
 
 
