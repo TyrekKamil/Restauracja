@@ -23,7 +23,8 @@ ostatni commit - 5 nov
 ## Scenariusz alternatywny  
 2a. Klient zażyczył sobie zmiany - dodanie składnika 
 > 1. Kelner naciska opcję '+' przy składniku, aby dodać składnik, według zaleceń Klienta   
->> 1a. System informuje Kelnera o braku dostępności składnika  
+> 2. System sprawdza dostępność dodatku  
+>> 2a. System informuje o braku danego składnika  
 >>> 1. Kelner informuje Klienta o braku składnika.  
 >>> 2. Operacja customizacji zostaje przerwana.
  
@@ -32,19 +33,20 @@ ostatni commit - 5 nov
 ## Wymagania specjalne:   
   
 
-* Możliwość interfejsu wielojęzycznego.
-
-* Ekran dotykowy wyświetlający komunikaty i umożliwiający edycję danych (dodawanie/usuwanie składników)
+* Możliwość interfejsu wielojęzycznego.  
+2. System posiada informacje o dodatkach, które można dodać do danego posiłku.  
+2a2. System posiada informacje o dostępnych w magazynie składnikach.
 
 
 ## Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
-2. Wybór opcji za pomocą ekranu dotykowego  - `+`/`-` przy składnikach
-3. System przechowujący dane o dostępnych składnikach
+2. Ekran dotykowy wyświetlający dodatki oraz ich ceny do danego posiłku.
+2. Wybór opcji za pomocą ekranu dotykowego  - `+`/`-` przy składnikach oraz ustawienie limitu składników dla posiłku.  
+
 
   
 ## Kwestie otwarte:  
   
-* Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
+2a2 Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
 
 
   
