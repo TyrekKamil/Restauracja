@@ -35,7 +35,7 @@ ostatni commit - 5 nov
 
 * Możliwość interfejsu wielojęzycznego.    
 2. System posiada informacje o dodatkach, które można dodać do danego posiłku.    
-2a2 System posiada informacje o dostępnych w magazynie składnikach.
+2a2. System posiada informacje o dostępnych w magazynie składnikach.
 
 
 ## Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
@@ -46,7 +46,7 @@ ostatni commit - 5 nov
   
 ## Kwestie otwarte:  
   
-2a2 Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
+2a2. Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
 
 
   
