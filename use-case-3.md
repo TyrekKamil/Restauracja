@@ -28,8 +28,8 @@ ostatni commit - 5 nov
 	- 1. Kelner naciska opcję '+' przy składniku, aby dodać składnik, według zaleceń Klienta   
 	- 2. System sprawdza dostępność dodatku  
 		- 2a. System informuje o braku danego składnika  
-	- 1. Kelner informuje Klienta o braku składnika.  
-	- 2. Operacja customizacji zostaje przerwana.    
+			- 1. Kelner informuje Klienta o braku składnika.  
+			- 2. Operacja customizacji zostaje przerwana.    
  
 2c. Kelner zażyczył sobie zmiany - usunięcie składnika  
   1. Kelner naciska opcję '-' przy składniku, aby usunąć składnik, według zaleceń Klienta    
