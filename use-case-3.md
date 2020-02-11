@@ -21,32 +21,33 @@ ostatni commit - 5 nov
 3. Zmodyfikowany posiłek zostaje dodany do zamówienia 
   
 ## Scenariusz alternatywny  
-2a. Klient zażyczył sobie zmiany - dodanie składnika 
-> 1. Kelner naciska opcję '+' przy składniku, aby dodać składnik, według zaleceń Klienta   
-> 2. System sprawdza dostępność dodatku  
->> 2a. System informuje o braku danego składnika  
->>> 1. Kelner informuje Klienta o braku składnika.  
->>> 2. Operacja customizacji zostaje przerwana.
+- *a. W dowolnym momencie system zawiesza się  
+	- 1. Kelner restartuje tablet  
+	- 2. Niedokończone operacje zostają usunięte
+- 2b. Klient zażyczył sobie zmiany - dodanie składnika   
+	- 1. Kelner naciska opcję '+' przy składniku, aby dodać składnik, według zaleceń Klienta   
+	- 2. System sprawdza dostępność dodatku  
+		- 2a. System informuje o braku danego składnika  
+			- 1. Kelner informuje Klienta o braku składnika.  
+			- 2. Operacja customizacji zostaje przerwana.    
  
-2b. Kelner zażyczył sobie zmiany - usunięcie składnika  
- > 1. Kelner naciska opcję '-' przy składniku, aby usunąć składnik, według zaleceń Klienta  
+2c. Kelner zażyczył sobie zmiany - usunięcie składnika  
+  1. Kelner naciska opcję '-' przy składniku, aby usunąć składnik, według zaleceń Klienta    
 ## Wymagania specjalne:   
   
 
 * Możliwość interfejsu wielojęzycznego.    
-2. System posiada informacje o dodatkach, które można dodać do danego posiłku.    
-2a2. System posiada informacje o dostępnych w magazynie składnikach.
+* System posiada informacje o dodatkach, które można dodać do danego posiłku.    
+* System posiada informacje o dostępnych w magazynie składnikach.
 
 
 ## Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
-2. Ekran dotykowy wyświetlający dodatki oraz ich ceny do danego posiłku.
-2. Wybór opcji za pomocą ekranu dotykowego  - `+`/`-` przy składnikach oraz ustawienie limitu składników dla posiłku.  
-
+2. Ekran dotykowy wyświetlający dodatki oraz ich ceny do danego posiłku, umożliwiający dobór dodatków do posiłku (buttony  `+`/`-` przy składnikach), ustalenie górnego limitu składników dla posiłku.
 
   
 ## Kwestie otwarte:  
   
-2a2. Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
+* Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
 
 
   
