@@ -47,7 +47,7 @@ ostatni commit - 5 nov
   
 ## Kwestie otwarte:  
   
-*. Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
+* Czy zmniejszającą się liczbę składników powinno określać się tylko na podstawie zamówień?
 
 
   
